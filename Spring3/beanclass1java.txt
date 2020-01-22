@@ -1,0 +1,21 @@
+package pack;
+
+public class BeanClass1 {
+String message;
+
+public void getMessage() {
+	System.out.println("hello"+message);
+}
+
+public void setMessage(String message) {
+	this.message = message;
+}
+public void init()
+{
+	System.out.println("this is inside init");
+}
+public void destroy()
+{
+	System.out.println("This is inside destroy");
+}
+}
