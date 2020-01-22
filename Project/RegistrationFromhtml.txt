@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="Ex1.js"></script>
+</head>
+<body>
+<form name='registration' onSubmit="fun1()">
+			<table>
+				<tr>
+					<td>userid: </td>
+					<td><input type="text" name="userid"/></td>
+				</tr>
+				<tr>
+					<td>Password : </td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+				    <td>Name : </td>
+				    <td><input type="text" name="ename"></td>
+				</tr>
+				<tr>
+					<td>Address : </td>
+					<td><input type="text" name="address" size="30" /></td>
+				</tr>
+				<tr>  
+					<td>Country : </td><td>
+                    <select name="userCountry">
+                    <option selected=""value="Default">(select a country)</option>
+                    <option>India</option>
+                    <option>Australia</option>
+                    <option>America</option>
+                    <option>Europe</option>
+                    <option>Other</option></select>
+				</tr>
+				<tr>
+               
+                    <td><label for="zip">ZIP Code : </label></td>
+                    <td><input type="text" name="zip"/></td>
+                </tr>
+                 <tr>
+
+				    <td>Email ID : </td>
+				    <td><input type="email" name="email"></td>
+				</tr>
+				    
+				 <tr>
+				    <td>Gender : </td>
+				    <td><input type="radio" name="name1" value="male"> Male<br></td>
+                    <td><input type="radio" name="name1" value="female"> Female<br></td>
+                    <td><input type="radio" name="name1" value="other"> Other<br></td>
+                 </tr>
+                  <tr>
+				    <td>Language : </td>
+				    <td><input type="checkbox" name="language" value="english"> English<br></td>
+                    <td><input type="checkbox" name="language" value="non english"> Non English<br></td>
+                 </tr>
+				 <tr>
+				 	<td>About : </td>
+					<td><input type="text" name="about" size="30" /></td>
+				 </tr>
+				
+				<tr>
+					<td>Contact No : </td>
+					<td><input type="text" name="contact" /></td>
+			    </tr>
+				</table>
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Cancel" /></form>
+			
+</body>
+</html>
