@@ -1,0 +1,19 @@
+package pack;
+import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.BeanFactory;
+
+import org.springframework.beans.factory.xml.*;
+import org.springframework.core.io.*;
+public class Main {
+
+	public static void main(String[] args) {
+		BeanFactory bf=new XmlBeanFactory(new ClassPathResource("ApplicationContext.xml"));
+A a1=(A)bf.getBean("a");
+a1.setMessage("Yo");
+a1.getMessage();
+A b1=(A)bf.getBean("a");
+//b1.setMessage("Welcome yo");
+b1.getMessage();
+	}
+
+}

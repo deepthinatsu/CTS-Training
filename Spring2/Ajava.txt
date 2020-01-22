@@ -1,0 +1,48 @@
+
+package pack;
+
+public class A {
+	String message;
+
+	public String getMessage() {
+		System.out.println("Message is "+message);
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	
+//		B b1;
+//private static final A a1=new A();
+//		public A() {
+//			System.out.println("A Class Const");
+//		}
+////		public B getB1() {
+////			return b1;
+////		}
+////		
+////		public void setB1(B b1) {
+////			
+////		this.b1 = b1; 
+////		}
+////		public void print()
+////		{
+////			System.out.println("hello B");
+////		}
+////		public void display()
+////		{
+////			print();
+////			b1.print();
+////			
+////		}
+//		public static A getA()
+//		{
+//			return a1;
+//		}
+//		public void display() {
+//			System.out.println("hello");
+//		}
+//		
+		}
+
