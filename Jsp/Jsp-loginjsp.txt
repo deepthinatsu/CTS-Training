@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String first,last,user,pass,contact,address;
+first=request.getParameter("first_name");
+last=request.getParameter("last_name");
+user=request.getParameter("username");
+pass=request.getParameter("password");
+address=request.getParameter("address");
+contact=request.getParameter("contact");
+if(user.equals("Deepu")&&pass.equals("Deepu@13"))
+{
+	//config.getInitParameter("Name");
+	out.println(config.getInitParameter("Name"));
+	//pageContext.setAttribute("User",user,pageContext.getAttribute());
+	//pageContext.setAttribute("User",user,pageContext.APPLICATION_SCOPE());
+	//pageContext.setAttribute("User",user,pageContext.getAttribute());
+	//pageContext.setAttribute("User",user,pageContext.REQUEST_SCOPE);
+	//request.getRequestDispatcher("jsp2.jsp").forward(request, response);
+	//session.setAttribute("User", user);
+
+//out.println("<a href='jsp2.jsp'>Click</a>");
+}	
+	
+	//request.getRequestDispatcher("jsp2.jsp").forward(request, response);
+	//response.sendRedirect("jsp2.jsp?User="+user);
+else
+
+	response.sendRedirect("Home.html");
+
+%>
+</body>
+</html>
