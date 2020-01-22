@@ -1,0 +1,34 @@
+package pack;
+
+
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ApplicationContext ap=new ClassPathXmlApplicationContext("ApplicationContext.xml");
+		studentDao s1=(studentDao)ap.getBean("s");
+		/*
+		 * int count=s1.saveStudent(new student(101,"Deepu"));
+		 * System.out.println(count+"rows updated");
+		 */
+		/*
+		 * int count=s1.updateStudent(new student(101,"Deepu"));
+		 * System.out.println(count+"rows updated");
+		 */
+		/*
+		 * int count=s1.deleteStudent(new student(101));
+		 * System.out.println(count+"rows updated");
+		 */
+		List<student> list=s1.getAllStudents();  
+        
+	    for(student e:list)  
+	        System.out.println(e.sid+" "+e.sname);  
+	
+	}
+
+}
