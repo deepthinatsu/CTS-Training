@@ -6,7 +6,7 @@
 <% 
 String message=(String)request.getAttribute("error");
 if(message!=null){
-out.println("<h1><font color='red'+message+"</font></h1>");
+out.println("<h1><font color='red'>"+message+"</font></h1>");
 }
 
 %>
